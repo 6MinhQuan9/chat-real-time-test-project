@@ -1,0 +1,7 @@
+@use './base' as *;
+@use 'sass:map';
+
+.content {
+  background-color: map.get($colors, $key: grey);
+  height: 100vh;
+}

@@ -1,10 +1,10 @@
-export const baseUrl = 'http://localhost:5000/api';
+export const baseUrl = "http://localhost:5000/api";
 
 export const postRequest = async (url: string, body: any) => {
     const response = await fetch(`${baseUrl}/${url}`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
     });

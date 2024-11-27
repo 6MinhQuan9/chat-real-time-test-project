@@ -1,0 +1,26 @@
+@use '../../../base' as *;
+@use 'sass:map';
+
+.header {
+  background: map.get($colors, white);
+  color: map.get($colors, primary);
+  padding: map.get($spacing, md) map.get($spacing, xl);
+  display: flex;
+  gap: map.get($spacing, md);
+  align-items: center;
+
+  .logo {
+    font-weight: bold;
+
+    img {
+      width: 11rem;
+      height: 2rem;
+    }
+  }
+
+  .page-list {
+    flex: 1;
+    display: flex;
+    gap: map.get($spacing, md);
+  }
+}

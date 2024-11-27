@@ -1,0 +1,51 @@
+// Colors
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  primary: #222831,
+  secondary: #8297ae,
+  blue: #02adb5,
+  grey: #F6F7F9,
+  subtitle: #8297ae // Consistent naming convention
+);
+
+// Font Sizes
+$font_sizes: (
+  xs: 0.6rem,
+  sm: 0.8rem,
+  md: 1rem,
+  lg: 1.2rem,
+  xl: 1.4rem,
+  xxl: 1.6rem,
+  xxxl: 1.8rem,
+  title: 2.4rem,
+  subtitle: 1.8rem
+);
+
+// Spacing (Padding & Margin)
+$spacing: (
+  xs: 0.6rem,
+  sm: 0.8rem,
+  md: 1rem,
+  lg: 1.2rem,
+  xl: 1.4rem,
+  xxl: 1.6rem,
+  xxxl: 1.8rem
+);
+
+$font_family: "Inter", sans-serif;
+
+$breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px
+);
+
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
